@@ -43,7 +43,16 @@
     <section class="hero">
         <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-btn">Заказать услугу</button>
+        <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+      <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+              <button type="button" class="close-button" data-modal-close>
+                  <svg class="close-button-icon" weight="11" height="11">
+                      <use href="./img/icons.svg#icon-close"></use>
+                  </svg>
+              </button>
+          </div>
+      </div>
     </div>
     </section>
     
@@ -99,17 +108,29 @@
                   src="./img/box1.jpg" 
                   alt="верстка кода"
                   width="370"
-                  /></li>
+                  />
+                <div class="feat-description">
+                <p class="feat-text">Десктопные приложения</p>
+                </div>
+                </li>
             <li class="feat-item"><img class="img-photo"
                   src="./img/box2.jpg"
                   alt="дизайн мобильных приложений"
                   width="370"
-                  /></li>
+                  />
+                <div class="feat-description">
+                <p class="feat-text">Мобильные приложения</p>
+                </div>
+                </li>
             <li class="feat-item"><img class="img-photo"
                   src="./img/box3.jpg" 
                   alt="цветовая гамма"
                   width="370"
-                  /></li> 
+                  />
+                <div class="feat-description">
+                <p class="feat-text">Дизайнерские решения</p>
+                </div>
+                </li> 
         </ul>
         </div>
     </section>   
@@ -382,6 +403,6 @@
     </div>
     </div>
     </footer>
-    
+  <script src="./js/modal.js"></script>   
 </body>
 </html>
